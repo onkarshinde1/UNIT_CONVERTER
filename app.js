@@ -34,3 +34,21 @@ GRAM.addEventListener('input',function(){
     // }
     KG.value = a;
 });
+// <!-- METER TO CENTIMETER -->
+var METER = document.getElementById('METER')
+var CENTIMETER = document.getElementById('CENTIMETER')
+
+METER.addEventListener('input',function(){
+    let x = this.value;
+    let y = x * 100;
+    CENTIMETER.value = y;
+});
+
+CENTIMETER.addEventListener('input',function(){
+    let y = this.value;
+    let x = y / 100;
+    // if(!Number.isInteger(a)){
+    //     a =a.toFixed(3)
+    // }
+   METER.value = x;
+});
